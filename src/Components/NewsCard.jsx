@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import { formatDistanceToNow } from "date-fns";
 import {
   Clock3,
@@ -7,8 +7,7 @@ import {
 
 const NewsCard = ({ article, featured }) => {
   return (
-    <motion.article
-      transition={{ duration: 0.25 }}
+    <article
       className="
         group
         overflow-hidden
@@ -153,7 +152,7 @@ const NewsCard = ({ article, featured }) => {
           </a>
         </div>
       </div>
-    </motion.article>
+    </article>
   );
 };
 
