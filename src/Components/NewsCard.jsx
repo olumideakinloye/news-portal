@@ -47,6 +47,8 @@ const NewsCard = ({ article, featured }) => {
             className="
               rounded-full
               bg-blue-600/95
+              shadow-md 
+              shadow-blue-700/60
               backdrop-blur-md
               px-4
               py-2
@@ -78,7 +80,7 @@ const NewsCard = ({ article, featured }) => {
             </span>
           </div>
 
-          <span className="text-xs font-medium uppercase tracking-wide text-blue-600">
+          <span className="text-xs font-medium uppercase tracking-wide text-red-400">
             Trending
           </span>
         </div>
@@ -93,7 +95,7 @@ const NewsCard = ({ article, featured }) => {
             line-clamp-2
             transition-colors
             duration-300
-            group-hover:text-blue-700
+            group-hover:text-black/60
             ${
               featured
                 ? "text-3xl"

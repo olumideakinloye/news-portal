@@ -70,7 +70,7 @@ const Home = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-5 py-4 rounded-xl placeholder:text-white/40 border border-white/40 focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              className="flex-1 px-5 py-4 rounded-xl placeholder:text-white/40 border border-white/40 focus:ring-2 focus:ring-white focus:outline-none"
             />
 
             <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold">

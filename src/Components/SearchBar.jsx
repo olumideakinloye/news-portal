@@ -46,7 +46,7 @@ const SearchBar = ({ value, onChange }) => {
           className="
             flex items-center gap-2
             rounded-xl
-            bg-blue-600 hover:bg-blue-700
+            bg-blue-500 hover:bg-blue-400
             px-5 py-2.5
             text-sm font-semibold text-white
             transition-all duration-200
