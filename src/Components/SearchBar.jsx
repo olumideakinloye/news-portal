@@ -2,7 +2,9 @@ import { Search } from "lucide-react";
 
 const SearchBar = ({ value, onChange, onSearch }) => {
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") onSearch?.();
+    if (e.key === "Enter") {
+      onSearch?.();
+    }
   };
 
   return (
@@ -20,13 +22,16 @@ const SearchBar = ({ value, onChange, onSearch }) => {
       "
     >
       <div className="flex items-center pl-5 pr-2">
-        <Search size={18} className="text-gray-400 transition-colors duration-200" />
+        <Search
+          size={18}
+          className="text-gray-400 transition-colors duration-200"
+        />
       </div>
 
       <input
         type="text"
         placeholder="Search breaking news, politics, sports..."
-        value={value}
+        value={value ?? ""}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKeyDown}
         className="

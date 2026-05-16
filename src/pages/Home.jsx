@@ -37,10 +37,7 @@ const Home = () => {
           <SearchBar
             value={searchQuery}
             onChange={setSearchQuery}
-            onSearch={() => {
-              const section = document.getElementById("latest-news");
-              if (section) section.scrollIntoView({ behavior: "smooth" });
-            }}
+            onSearch={() => console.log(searchQuery)}
           />
         </div>
       </div>
@@ -82,7 +79,9 @@ const Home = () => {
           id="latest-news"
         >
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl font-black text-blue-900">Latest News</h2>
+            <h2 className="text-4xl font-black text-blue-900">
+              Latest News{searchQuery ? ` on "${searchQuery}"` : ""}
+            </h2>
           </div>
 
           <LatestNews articles={articles.slice(1)} loading={loading} />

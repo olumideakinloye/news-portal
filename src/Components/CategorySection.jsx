@@ -8,7 +8,7 @@ const CategorySection = ({ title, articles }) => {
   const limited = rest.slice(0, 8);
 
   return (
-    <section className="mt-20">
+    <section className="mt-20 mx-5">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-4xl font-black text-blue-900">{`${title} News`}</h2>
       </div>

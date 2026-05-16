@@ -13,7 +13,7 @@ const CategoryNav = () => {
   const { category, setCategory } = useContext(NewsContext);
 
   return (
-    <div className="flex overflow-x-auto gap-3 py-4 scrollbar-hide">
+    <div className="mx -5 flex overflow-x-auto gap-3 py-4 scrollbar-hide">
       {categories.map((cat) => (
         <button
           key={cat.value}
