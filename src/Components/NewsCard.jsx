@@ -32,28 +32,6 @@ const NewsCard = ({ article, featured }) => {
         />
 
         <div />
-
-        <div className="absolute top-4 left-4">
-          <span
-            className="
-              rounded-full
-              bg-blue-600/95
-              shadow-md 
-              shadow-blue-700/60
-              backdrop-blur-md
-              px-4
-              py-2
-              text-xs
-              font-bold
-              uppercase
-              tracking-wide
-              text-white
-              shadow-lg
-            "
-          >
-            {article.source.name}
-          </span>
-        </div>
       </div>
 
       <div className="p-6">

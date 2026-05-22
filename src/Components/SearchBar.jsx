@@ -3,6 +3,7 @@ import { Search } from "lucide-react";
 const SearchBar = ({ value, onChange, onSearch }) => {
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
+      e.target.blur()
       onSearch?.();
     }
   };
@@ -37,7 +38,7 @@ const SearchBar = ({ value, onChange, onSearch }) => {
         className="
           w-full bg-transparent
           py-4 pr-4
-          text-[15px] font-medium
+          text-[16px] font-medium
           text-gray-800
           placeholder:text-gray-400
           placeholder:font-normal
@@ -47,7 +48,10 @@ const SearchBar = ({ value, onChange, onSearch }) => {
 
       <div className="p-2">
         <button
-          onClick={onSearch}
+          onClick={()=>{
+            document.activeElement.blur();
+            onSearch?.();
+          }}
           className="
             flex items-center gap-2
             rounded-xl

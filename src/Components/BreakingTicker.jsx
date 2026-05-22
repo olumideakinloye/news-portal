@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const BreakingTicker = ({ headlines }) => {
   return (
-    <div className="bg-red-700 text-white/80 overflow-hidden sticky top-0 z-30">
+    <div className="bg-red-700 text-white/80 overflow-hidden sticky top-0 z-30 hidden md:block">
       <div className="flex items-center">
         <div className="bg-red-900 px-4 py-2 font-bold z-20">
           BREAKING

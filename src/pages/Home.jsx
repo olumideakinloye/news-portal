@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NewsContext } from "../context/NewsContext";
 
 import Navbar from "../components/Navbar";
@@ -10,6 +10,7 @@ import SearchBar from "../components/SearchBar";
 import TrendingSidebar from "../components/TrendingSidebar";
 import LatestNews from "../components/LatestNews";
 import Footer from "../components/Footer";
+import BackToTop from "../Components/BackToTop";
 
 const Home = () => {
   const {
@@ -25,8 +26,15 @@ const Home = () => {
     error,
   } = useContext(NewsContext);
 
+  const [inputValue, setInputValue] = useState("");
+
+  const handleSearch = () => {
+    setSearchQuery(inputValue);
+  }
+
   return (
     <div className="bg-gray-50 min-h-screen">
+      <BackToTop/>
       <BreakingTicker headlines={trending} />
       <Navbar />
 
@@ -35,9 +43,9 @@ const Home = () => {
 
         <div className="my-6">
           <SearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-            onSearch={() => console.log(searchQuery)}
+            value={inputValue}
+            onChange={setInputValue}
+            onSearch={handleSearch}
           />
         </div>
       </div>
@@ -58,7 +66,7 @@ const Home = () => {
               found
             </span>
             <button
-              onClick={() => setSearchQuery("")}
+              onClick={() => {setSearchQuery(""), setInputValue("")}}
               className="ml-auto text-sm text-red-400 hover:text-red-600 font-semibold transition"
             >
               Cancel Search ✕

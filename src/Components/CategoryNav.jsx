@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { NewsContext } from "../context/NewsContext";
 
 const categories = [
-  { label: "Top Stories", value: "general" },
+  { label: "Top Stories", value: "" },
   { label: "Technology", value: "technology" },
   { label: "Business", value: "business" },
-  { label: "Sports", value: "sports" },
+  { label: "Sports", value: "sport" },       // was "sports"
   { label: "Science", value: "science" },
 ];
 
@@ -13,7 +13,7 @@ const CategoryNav = () => {
   const { category, setCategory } = useContext(NewsContext);
 
   return (
-    <div className="mx -5 flex overflow-x-auto gap-3 py-4 scrollbar-hide">
+    <div className="px-5 flex overflow-x-auto gap-3 py-4 scrollbar-hidden">
       {categories.map((cat) => (
         <button
           key={cat.value}

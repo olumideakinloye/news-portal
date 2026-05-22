@@ -4,12 +4,12 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-10 z-50 bg-white shadow-sm">
+    <header className="z-50 bg-white shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex gap-14 md:flex-row items-center md:gap-96">
         <span className="text-sm">
           {format(new Date(), "EEEE, do MMMM yyyy")}
         </span>
-        <h1 className="text-3xl font-extrabold text-blue-900 tracking-tight logo">
+        <h1 className="text-2xl md:text-3xl font-extrabold text-blue-900 tracking-tight logo">
           NEWSWIRE
         </h1>
       </nav>

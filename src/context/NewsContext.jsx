@@ -31,8 +31,8 @@ export const NewsProvider = ({ children }) => {
 
   useEffect(() => {
     const loadCategorySections = async () => {
-      const entertainment = await fetchTopHeadlines("entertainment");
-      const health = await fetchTopHeadlines("health");
+      const entertainment = await fetchTopHeadlines("culture");
+      const health = await fetchTopHeadlines("society");
 
       setEntertainmentNews(entertainment);
       setHealthNews(health);

@@ -6,10 +6,10 @@ const Footer = () => {
   const { setCategory, category } = useContext(NewsContext);
 
   const categories = [
-  { label: "Top Stories", value: "general" },
+  { label: "Top Stories", value: "" },
   { label: "Technology", value: "technology" },
   { label: "Business", value: "business" },
-  { label: "Sports", value: "sports" },
+  { label: "Sports", value: "sport" },       
   { label: "Science", value: "science" },
 ];
 
