@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { NewsContext } from "../context/NewsContext";
 
-import Navbar from "../components/Navbar";
 import BreakingTicker from "../components/BreakingTicker";
 import HeroSection from "../components/HeroSection";
 import CategoryNav from "../components/CategoryNav";
@@ -11,6 +10,7 @@ import TrendingSidebar from "../components/TrendingSidebar";
 import LatestNews from "../components/LatestNews";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const {
