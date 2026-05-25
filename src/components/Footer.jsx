@@ -65,7 +65,7 @@ const handleCategoryClick = (value) => {
 
       <div className="border-t border-white/10 text-center py-6 text-gray-500 flex align-center justify-around flex-wrap flex-col gap-4 md:flex-row">
         <p>© 2026 NEWSWIRE. All rights reserved.</p>
-        <p className="text-sm">Powered by NewsAPI</p>
+        <p className="text-sm">Powered by The Guardian</p>
       </div>
     </footer>
   );

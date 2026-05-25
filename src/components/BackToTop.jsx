@@ -20,7 +20,7 @@ const BackToTop = () => {
       aria-label="Back to top"
       className="fixed bottom-6 right-5 z-50 bg-blue-900 text-white
         rounded-full w-13 text-2xl h-13 flex items-center justify-center
-        shadow-2xl hover:bg-blue-800 transition-all"
+        shadow-3xl hover:bg-blue-800 transition-all"
     >
       ↑
     </button>
